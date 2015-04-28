@@ -16,7 +16,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Myth\\": "myth/"
+            "Myth\\": "myth/",
+            "Bonfire\\": "bonfire/"
         }
     },
 	"require": {

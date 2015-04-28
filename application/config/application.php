@@ -45,7 +45,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 // Site Information
 //--------------------------------------------------------------------
 //
-    $config['site.name']        = 'Sprint PHP';
+    $config['site.name']        = 'Bonfire Next';
     $config['site.auth_email']  = 'test@example.com';
 
 //--------------------------------------------------------------------
@@ -96,8 +96,8 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 // is the alias name. This is used to reference within the 'display'
 // method of the
     $config['theme.paths'] = array(
+        'admin'      => FCPATH .'themes/admin',
         'bootstrap'  => FCPATH .'themes/bootstrap3',
-        'foundation' => FCPATH .'themes/foundation5',
         'docs'       => FCPATH .'themes/docs',
         'email'      => FCPATH .'themes/email'
     );

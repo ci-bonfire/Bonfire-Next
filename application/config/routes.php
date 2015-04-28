@@ -56,6 +56,12 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+//--------------------------------------------------------------------
+// Admin Area
+//--------------------------------------------------------------------
+// You can easily change the name of the URI segment here...
+//
+$routes->area('admin', 'admin');
 
 //--------------------------------------------------------------------
 // Auth-Related Routes
