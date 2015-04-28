@@ -1,19 +1,8 @@
-# Sprint PHP
+# Bonfire Next
 
-Develop Branch: [![Build Status](https://travis-ci.org/ci-bonfire/Sprint.svg?branch=develop)](https://travis-ci.org/ci-bonfire/Sprint)
+Based on the CodeIgniter 3 PHP framework and [SprintPHP][1], Bonfire provides a ready-to-roll admin area and tons of power tools to supercharge your custom web application development.
 
-Based on the CodeIgniter 3 PHP framework, Sprint provides the essential running start to get you to the fun part of building your web applications. It provides additional utilities and workflow enhancements to stock CodeIgniter. In the process, it helps to modernize the code a bit. 
-
-Sprint is intended to be the heart of [Bonfire Next](https://github.com/ci-bonfire/Bonfire-Next), though that integration has not happened yet. 
-
-## Why Sprint?
-I found that for a number of my recent projects, the current Bonfire code was too much, too opinionated and fully developed. And the clients were requesting for me to use the Foundation CSS Framework since that's what they use in house, and Bonfire was built on Bootstrap. Besides, sometimes Bonfire is just too big of an application for your projects. 
-
-While working on Bonfire Next and an in-progress book on modernizing CodeIgniter and it's practical usage,  I realized that I could reform the current slimmer codebase that I've been using and make it the core of Bonfire Next. The goal is to have basic functionality and workflow in place in Sprint, and to build on that in Bonfire. 
-
-So Sprint is basically CodeIgniter, but with more cowbell.
-
-NOTE: This is currently in a **Beta-release** state. What's that mean? It means that no new features are expected, but is a time for bugs to get hunted down and stomped out. If you use the project and find changes to the code or docs, pull requests are accepted :) Preferably with tests in place, though I won't be enforcing that at this point.
+**NOTE: Bonfire Next is in a very early development version! This is NOT ready for usage in any form.**
 
 ## System Requirements
 
@@ -24,37 +13,28 @@ NOTE: This is currently in a **Beta-release** state. What's that mean? It means 
 
 ## How To Install?
 
-Installation instructions can be found in the docs source here on [GitHub](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/installation.md).
+Installation instructions can be found in the docs source here on [GitHub][2].
 
 ## What's In The Box?
 
-The following is being built for the initial release:
+In addition to the features found in Sprint, Bonfire adds the following useful tools:
 
-* Powerful [MY_Model](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/general/models.md) with standard CRUD, db wrappers, observer methods and in-model validation
-* [MY_Controller](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/general/controllers.md) with simple theming, rendering methods for other data types (like json) and more
-* [Extended Router](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/general/routes.md) to include module support, named routes, HTTP verb-based routing, Restful resources and scoped routes/areas.
-* Simple, but flexible, [Template](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/general/themes.md) system
-* Module Support, without being able to call other controllers. That simply gets too complex and causes too many problems. Instead, it's simply the ability to keep MVC triads in modules that can still be called from the URI.
-* Better [Database Migrations](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/database/migrations.md), with CLI tool for building and running
-* Database [Seeding](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/database/seeding.md) with CLI tool
-* Markdown-based [documentation system](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/writing_docs.md).
-* Flexible [Events system](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/general/events.md) with priotized publish/subscribe methodology.
-* Simple, GUI-less [cron controller](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/general/cronjobs.md) that can be used through standard crontab or scheduled tasks.
-* [Settings library](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/general/settings.md) for maintaining system-wide settings, either in the database, config files, or a combination.
-* Simple, but expandable, [Authentication](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/security/authentication.md) and Authorization system with flexible [Password strength checking](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/security/passwords.md)
-* [Email Queue system](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/general/email.md) allows for very flexible email generations and sending. 
-* [The Forge](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/forge/overview.md) - a code builder with simple [generators](https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/forge/generators.md) in place, but fully customizable and easy to add your own.
+* **GUI backend** area already setup for you.
+* **Database Tools** - A GUI to manage do basic management of your database without logging into phpMyAdmin.
+* **User Management** - including banning, creating, deleting, role management, etc. 
+* **Security Logging** - on by default, will track user actions across sensitive areas, and gives you a simple way to add it to your application.
+* **Settings Area** - automatically pulls in and integrates settings from all of the modules within the system to conveniently edit at one place.
+* **Modular Dashboard** - makes it easy to add blocks for display on the dashboard from any module.
 
-
-## What's NOT included?
-
-Sprint will not include much in the way of a built-in admin area, though it will have default views that can be incorporated into your own areas.
-
-It will not include a method for working with assets as much of this can be handled easier and with higher performance on a per-project basis, often using something like [CodeKit](http://incident57.com/codekit/).
 
 ## Where's the Docs?
 Docs are included in the repo itself, and it comes with a pretty nice documentation system built on simple Markdown-formatted files. 
 
-To view the documentation, download the code, and point your browser to `/docs`. The rest should be working fine, but please [let me know](https://github.com/ci-bonfire/Sprint/issues) if you hit any snags! 
+To view the documentation, download the code, and point your browser to `/docs`. The rest should be working fine, but please [let me know][3] if you hit any snags! 
 
-To view the docs prior to downloading, you'll have to [browse the files](https://github.com/ci-bonfire/Sprint/tree/develop/myth/_docs_src) in the repo for now. Before too long, we'll have a site setup for it. But the current focus is on the initial release getting whipped into shape. 
+To view the docs prior to downloading, you'll have to [browse the files][4] in the repo for now. Before too long, we'll have a site setup for it. But the current focus is on the initial release getting whipped into shape. 
+
+[1]:	http://sprintphp.com
+[2]:	https://github.com/ci-bonfire/Sprint/blob/develop/myth/_docs_src/installation.md
+[3]:	https://github.com/ci-bonfire/Sprint/issues
+[4]:	https://github.com/ci-bonfire/Bonfire-Next/tree/develop/bonfire/_docs_src
