@@ -1,0 +1,37 @@
+{
+    "name" : "sprintphp/sprintphp",
+	"description" : "Supercharged Tools on top of CodeIgniter 3",
+    "version": "1.0-alpha",
+    "type": "project",
+    "keywords": ["php", "codeigniter"],
+    "homepage": "http://sprintphp.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lonnie Ezell",
+            "email": "lonnie@newmythmedia.com",
+            "homepage": "http://newmythmedia.com",
+            "role": "developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Myth\\": "myth/"
+        }
+    },
+	"require": {
+		"php": ">=5.4",
+        "mobiledetect/mobiledetectlib": "dev-master",
+        "raveren/kint": "0.9.*@dev",
+        "league/commonmark": "0.7.*"
+	},
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "fzaninotto/faker": "1.5.*@dev"
+    },
+    "scripts": {
+      "post-create-project-cmd": [
+        "php build/build.php postCreateProject"
+      ]
+    }
+}
