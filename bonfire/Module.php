@@ -1,5 +1,12 @@
 <?php namespace Bonfire;
 
+/**
+ * Class Module
+ *
+ * Provides a base class for module definition files to extend from.
+ *
+ * @package Bonfire
+ */
 class Module {
 
 	protected $ci;

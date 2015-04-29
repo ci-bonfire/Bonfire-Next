@@ -3,6 +3,8 @@
 use Myth\Auth\AuthTrait;
 use Myth\Controllers\ThemedController;
 
+define('IN_ADMIN', true);
+
 class AdminController extends ThemedController {
 
     use AuthTrait;

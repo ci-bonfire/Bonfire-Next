@@ -12,8 +12,6 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<?= site_url('themes/admin/assets/css/app.css') ?>">
-    <link rel="stylesheet" href="<?= site_url('themes/admin/assets/css/ajax.css') ?>">
-    <link rel="stylesheet" href="<?= site_url('themes/admin/assets/css/dashboard.css') ?>">
 
     <?php foreach ($stylesheets as $style) :?>
         <link rel="stylesheet" href="<?= $style ?>" />
